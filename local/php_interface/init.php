@@ -1,6 +1,6 @@
 <?php
 
-use \Bitrix\Main\Page\Asset;
+
 
 if(file_exists($_SERVER['DOCUMENT_ROOT'] . "/local/php_interface/Entity.php")){
     require_once($_SERVER['DOCUMENT_ROOT'] . "/local/php_interface/Entity.php");
@@ -21,6 +21,4 @@ foreach ($filenames as $filename) {
     }
 }
 
-if(file_exists($_SERVER['DOCUMENT_ROOT'] . "/local/js/hidenodes.js")){
-    Asset::getInstance()->addString('<script src="/local/js/hidenodes.js"></script>');
-}
+
